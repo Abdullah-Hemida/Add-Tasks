@@ -1,0 +1,80 @@
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 80vw;
+    margin: 100px auto;
+}
+
+.form {
+    display: flex;
+    background-color: #dfdfdf;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;    
+}
+
+.form .input-text{
+    width: 330px;
+    height: 30px;
+    border: none;
+    border-radius: 6px;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    outline: none;
+}
+
+.form .add-task{
+    margin-left: 10px;
+    font-size: 14px;
+    color: white;
+    background-color: #ff5722;
+    padding: 6px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.tasks-content {
+    background-color: #dfdfdf;
+    min-height: 30px;
+    margin-top: 15px;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 15px;
+    padding: 15px 0;
+}
+
+.tasks-content .task {
+    background-color: white;
+    height: 30px;
+    display: flex;
+    width: 95%;
+    padding: 5px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 20PX;  
+}
+.tasks-content .task:hover {
+    opacity: 0.3;     
+}
+.tasks-content .done {
+    opacity: 0.3;    
+}
+.tasks-content .del {
+    font-size: 14px;
+    background-color: hwb(11deg 0% 1%);
+    padding: 1px 8px;
+    margin-right: 10px;
+    color: white;
+    border-radius: 6px;
+}
